@@ -1,0 +1,12 @@
+import psutil
+import time
+
+while True:
+    cpu_percent = psutil.cpu_percent(interval=1)
+    print(f"CPU usage: {cpu_percent}%")
+    time.sleep(1)
+    
+    
+    
+    
+ # Note if psutil isn't installed then run 'sudo pip install --upgrade psutil' in  the terminal,
